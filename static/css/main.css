@@ -1,0 +1,103 @@
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --VeryPaleCyan: hsl(193, 100%, 96%);
+  --VeryDarkCyan: hsl(192, 100%, 9%);
+  --GrayishBlue: hsl(208, 11%, 55%); }
+
+.header {
+  font-family: Poppins, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: calc( 56px / 2 );
+  padding: 0 calc( 32px / 2 );
+  margin-bottom: 100px; }
+  .header__logo {
+    background-image: url(../images/logo.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 106px;
+    height: 17px; }
+  .header__try {
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px var(--GrayishBlue); }
+    .header__try button {
+      cursor: pointer;
+      font-weight: 600;
+      background: white;
+      border-style: none;
+      height: 49px;
+      padding: 0 calc( 46px / 2 );
+      border-radius: 20px; }
+
+.hero {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  background-image: url(../images/bg-hero-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .hero-h1 {
+    padding: 0 calc( 129px / 2 );
+    color: var(--VeryDarkCyan);
+    font-size: 1.2em;
+    line-height: 1.5; }
+  .hero-p {
+    padding: 0 30px;
+    line-height: 1.5;
+    color: var(--VeryDarkCyan);
+    font-weight: 400;
+    font-size: 1rem; }
+  .hero-button {
+    background: var(--Pink);
+    border-style: none;
+    padding: 19px calc( 122px / 2 );
+    border-radius: 30px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-bottom: 75px; }
+  .hero-img {
+    width: calc( 596px / 2 ); }
+
+.features {
+  background: white;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  color: var(--VeryDarkCyan);
+  padding-top: 115px;
+  grid-gap: 30px; }
+  .features__card {
+    border-radius: 20px;
+    padding: 115px 0 50px 0;
+    width: calc( 677px / 2 );
+    box-shadow: 0px 0px 10px 3px rgba(62, 82, 163, 0.1); }
+    .features__card-img {
+      width: 300px; }
+    .features__card-h1 {
+      font-size: 1.2em;
+      font-weight: 700;
+      padding: 20px 0; }
+    .features__card-p {
+      color: var(--GrayishBlue);
+      font-weight: 400;
+      padding: 0 30px;
+      font-size: 0.8em;
+      line-height: 1.2; }
+
+.footer {
+  background: var(--VeryDarkCyan); }
+
+body {
+  font-size: 18px;
+  background: var(--VeryPaleCyan);
+  font-family: "Open Sans", sans-serif; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+  .attribution a {
+    color: #3e52a3; }
+
+/*# sourceMappingURL=main.css.map */
