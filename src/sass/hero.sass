@@ -27,3 +27,33 @@
         margin-bottom: 75px
     &-img
         width: calc( 596px / 2 )
+    @media screen and ( min-width: 1024px  )
+
+        background-image: url(../images/bg-hero-desktop.svg)
+        background-size: cover
+        background-repeat: no-repeat
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-template-rows: auto
+        grid-template-areas: "h1 image" "text image" "botton image"
+        text-align: left
+        column-gap: 40px
+
+        &-h1
+            grid-area: h1
+            padding: 0 30px
+            font-size: 2.5em
+        &-p
+            grid-area: text
+            font-size: 1.15em
+        &-button
+            margin-left: 30px
+            grid-area: botton
+            width: auto
+            padding: 10px
+            width: 250px
+            
+        &-img
+            grid-area: image
+            width: 595px
+        

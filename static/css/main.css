@@ -30,6 +30,9 @@
       height: 49px;
       padding: 0 calc( 46px / 2 );
       border-radius: 20px; }
+  @media screen and (min-width: 1024px) {
+    .header {
+      padding: 0 32px; } }
 
 .hero {
   font-family: "Open Sans", sans-serif;
@@ -60,6 +63,33 @@
     margin-bottom: 75px; }
   .hero-img {
     width: calc( 596px / 2 ); }
+  @media screen and (min-width: 1024px) {
+    .hero {
+      background-image: url(../images/bg-hero-desktop.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "h1 image" "text image" "botton image";
+      text-align: left;
+      column-gap: 40px; }
+      .hero-h1 {
+        grid-area: h1;
+        padding: 0 30px;
+        font-size: 2.5em; }
+      .hero-p {
+        grid-area: text;
+        font-size: 1.15em; }
+      .hero-button {
+        margin-left: 30px;
+        grid-area: botton;
+        width: auto;
+        padding: 10px;
+        width: 250px; }
+      .hero-img {
+        grid-area: image;
+        width: 595px; } }
 
 .features {
   background: white;
@@ -104,7 +134,40 @@
         font-size: 0.7em;
         color: white;
         padding: 16px;
-        border-radius: 25px; }
+        border-radius: 25px;
+        cursor: pointer; }
+  @media screen and (min-width: 1024px) {
+    .features {
+      margin: auto;
+      text-align: left;
+      display: grid;
+      justify-items: center;
+      grid-row-gap: 70px; }
+      .features__card {
+        width: 80vw;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "title image" "text image";
+        align-items: center;
+        column-gap: 40px;
+        padding: 50px 0; }
+        .features__card-h1 {
+          grid-area: title;
+          font-size: 1.7em;
+          padding: 0 30px; }
+        .features__card-p {
+          grid-area: text;
+          font-size: 1em; }
+        .features__card-img {
+          text-align: center;
+          grid-area: image; }
+        .features__card-finally {
+          font-size: 1.5em;
+          width: 50vw;
+          text-align: center;
+          padding: 50px 0; } }
 
 .footer {
   background: var(--VeryDarkCyan);
@@ -139,19 +202,57 @@
       margin: 5px; }
     .footer__social p {
       margin: 15px;
-      font-size: 0.73em; }
+      font-size: 1.2em; }
+  .footer__copy {
+    font-size: 0.8em;
+    text-align: center; }
+  .footer__attribution {
+    display: block;
+    width: 100%; }
+    .footer__attribution p {
+      font-size: 11px;
+      text-align: center;
+      margin: 15px 0 0 0; }
+      .footer__attribution p a {
+        color: #3e52a3;
+        text-decoration: none; }
+  @media screen and (min-width: 1024px) {
+    .footer {
+      display: grid;
+      padding: 100px 60px 0;
+      gap: 40px;
+      align-items: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-auto-rows: auto auto auto;
+      grid-template-areas: "data link social" "data link copyright" "attribution attribution attribution"; }
+      .footer__data-container {
+        grid-area: data; }
+      .footer__link-container {
+        grid-area: link;
+        column-count: 2; }
+        .footer__link-container ul {
+          margin: 0; }
+      .footer__social {
+        font-size: 2.2em;
+        grid-area: social; }
+      .footer__copy {
+        grid-area: copyright; }
+      .footer__attribution {
+        display: block;
+        width: 100%;
+        grid-area: attribution; }
+        .footer__attribution p {
+          font-size: 11px;
+          text-align: center;
+          margin: 15px; }
+          .footer__attribution p a {
+            color: #3e52a3;
+            text-decoration: none; } }
 
 body {
   font-size: 18px;
   background: var(--VeryPaleCyan);
   font-family: "Open Sans", sans-serif; }
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-  margin: 15px; }
-  .attribution a {
-    color: #3e52a3; }
 
 .show {
   display: none; }

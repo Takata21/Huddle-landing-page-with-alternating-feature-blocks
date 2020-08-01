@@ -32,4 +32,53 @@
             margin: 5px
         p
             margin: 15px
-            font-size: .73em
+            font-size: 1.2em 
+    &__copy
+        font-size: .8em
+        text-align: center
+    &__attribution
+            display: block
+            width: 100%
+            p
+                font-size: 11px
+                text-align: center
+                margin: 15px 0 0 0
+                a
+                    color: hsl(228, 45%, 44%)
+                    text-decoration: none
+        
+    @media screen and (min-width: 1024px)
+        display: grid
+        padding: 100px 60px 0
+        gap: 40px
+        align-items: center
+        grid-template-columns: 1fr 1fr 1fr 
+        grid-auto-rows: auto auto auto
+        grid-template-areas: "data link social" "data link copyright" "attribution attribution attribution"
+        &__data-container
+            grid-area: data
+        &__link
+            &-container
+                ul
+                    margin: 0
+                grid-area: link 
+                column-count: 2
+        &__social
+            font-size: 2.2em
+            grid-area: social
+        &__copy
+            grid-area: copyright   
+        
+        &__attribution
+            display: block
+            width: 100%
+            grid-area: attribution
+            p
+                font-size: 11px
+                text-align: center
+                margin: 15px
+                a
+                    color: hsl(228, 45%, 44%)
+                    text-decoration: none
+        
+            

@@ -42,4 +42,39 @@
                 color: white
                 padding: 16px
                 border-radius: 25px
+                cursor: pointer
 
+    @media screen and ( min-width: 1024px  )
+        margin: auto
+        text-align: left
+        display: grid
+        justify-items: center
+        grid-row-gap: 70px
+        &__card
+            width: 80vw
+            padding: 0
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-template-rows: auto
+            grid-template-areas: "title image" "text image" 
+            align-items: center
+            column-gap: 40px
+            padding: 50px 0
+            &-h1
+                grid-area: title
+                font-size: 1.7em
+                padding: 0 30px
+            &-p
+                grid-area: text
+                font-size: 1em
+            &-img
+                text-align: center
+                grid-area: image
+            &-finally
+                font-size: 1.5em
+                width: 50vw
+                text-align: center
+                padding: 50px 0
+                
+            
+        
