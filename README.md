@@ -1,0 +1,1 @@
+# Web design - Huddle-landing-page-with-alternating-feature-blocks![screencapture-takata21-github-io-Huddle-landing-page-with-alternating-feature-blocks-2022-03-01-22_55_36](https://user-images.githubusercontent.com/54631891/156292032-5fea34d7-e1bd-4462-9af6-08f71e4767a7.png)
